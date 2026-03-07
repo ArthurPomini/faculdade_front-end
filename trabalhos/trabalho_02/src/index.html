@@ -1,100 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Página Didática - Topologias em Redes </title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Página Didática - Topologias em Redes </title>
 
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <main>
-            <header name="introducao">
-                <h1>Topologias em Redes</h1>
-                <p>Na disciplina de Redes de Computadores, existe um conteúdo em específico chamado <strong>Topologias</strong>, aonde nos mostra sobre como funciona a organização de dispositivos conectados em uma rede, ou seja, tanto fisicamente (em cabos) quanto logicamnente (no fluxo de dados).</p>
-                <p>Hoje aprenderemos alguns dos principais tipos de topologias.</p>
-            </header>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <main>
+        <header name="introducao">
+            <h1>Topologias em Redes</h1>
+            <p>Na disciplina de Redes de Computadores, existe um conteúdo em específico chamado <strong>Topologias</strong>, aonde nos mostra sobre como funciona a organização de dispositivos conectados em uma rede, ou seja, tanto fisicamente (em cabos) quanto logicamnente (no fluxo de dados).</p>
+            <p>Hoje aprenderemos alguns dos principais tipos de topologias.</p>
+        </header>
             
-            <section name="index">
-                <h2>Index: </h2>
-                <ul>
-                    <li>Qual a diferença da física para a lógica?</li>
-                    <li>Barramento</li>
-                    <li>Anel</li>
-                    <li>Malha</li>
-                    <li>Estrela</li>
-                    <li>Árvore</li>
-                    <li>Avaliação do conteúdo</li>
-                </ul>
-            </section>
+        <section name="index">
+            <h2>Index: </h2>
+            <ul>
+                <li>Qual a diferença da física para a lógica?</li>
+                <li>Barramento</li>
+                <li>Anel</li>
+                <li>Malha</li>
+                <li>Estrela</li>
+                <li>Árvore</li>
+                <li>Avaliação do conteúdo</li>
+            </ul>
+        </section>
             
-            <br>
+        <br>
 
-            <section name="conteudo">
-                <h2>Qual a diferença entre topologia física e lógica?</h2>
-                <p>A topologia física consiste-se na organização de como os cabos de rede são conectados entre os componentes, como computadores, roteadores e switchs.</p>
-                <p>Já a topologia lógica consiste-se em como os dados fluem dentro da rede e de um dispositivo para outro, independentemente das conexões físicas entre os dispositivos.</p>
-                <p>É importante frizar que, em uma rede, a topologia física pode ser uma e a topolgia lógica outra, exemplo: Em uma rede, a topologia física é em árvore, mas a topologia lógica é em estrela.</p>
+        <section name="conteudo">
+            <h2>Qual a diferença entre topologia física e lógica?</h2>
+            <p>A topologia física consiste-se na organização de como os cabos de rede são conectados entre os componentes, como computadores, roteadores e switchs.</p>
+            <p>Já a topologia lógica consiste-se em como os dados fluem dentro da rede e de um dispositivo para outro, independentemente das conexões físicas entre os dispositivos.</p>
+            <p>É importante frizar que, em uma rede, a topologia física pode ser uma e a topolgia lógica outra, exemplo: Em uma rede, a topologia física é em árvore, mas a topologia lógica é em estrela.</p>
                 
-                <br>
-
-                <h2>Tipos de Topologias:</h2>
-                <ol>
-                    <h3><li>Barramento</li></h3>
-                        <p>A topologia em barramento consiste em um cabo de rede central onde está conectado todos os outros dispositivos.</p>
-                        <img src="img/img1.png"/>
-                        <p>É uma topologia simples e fácil de ser inserida, porém essa topologia traz algumas desvantagens como alto nível de congestionamento e a falha na confiabilidade, visto que se o cabo central sofrer algum problema, a rede inteira estará comprometida.</p>
-                    <h3><li>Ponto a Ponto</li></h3>
-                        <p>Já a topologia ponto a ponto consiste em conectar todos os dispositivos da rede entre si, por isso do nome, está tudo ligado de ponto a ponto.</p>
-                        <img src="img/img2.png"/>
-                        <p>É uma topologia muito positiva, já que o tráfego é bem mais controlado e não tem muito congestionamento. Porém, a desvantagem dela é seu alto custo, ou seja, para poder aderir a essa topologia é necessário investir em muitos cabos para ligar todos os dispositivos.</p>
-                    <h3><li>Anel</li></h3>
-                        <p>A topologia em formato de anel quer dizer que os dispositivos conectados nas redes são conectados entre si de uma forma em que um computador se liga no próximo computador, e no anterior também.</p>
-                        <img src="img/img3.png"/>
-                        <p>Desta forma, para uma informação ir de um dispositivo até outro dispositivo distante, será necessário que ele percorra por todos os dispositivos no caminho até chegar ao seu destino.</p>
-                        <p>A vantagem da topologia em anel é que não existe congestionamento, já que não possui caminhos compartilhados. A desvantagem é que quando um dispositivo apresenta problema, a rede toda é impactada.</p>
-                    <h3><li>Estrela</li></h3>
-                        <p>Aqui, todos os dispositivos são conectados em um único ponto central, geralmente sendo um switch.</p>
-                        <img src="img/img4.png"/>
-                        <p>A topologia tem ponto positivo na fácil manutenção, visto que é fácil encontrar o erro em algum dispositivo com problemas. Porém, a rede fica dependente do dispositivo central, que se ocorrer alguma falha, resultará em um impacto na rede toda.</p>
-                    <h3><li>Árvore</li></h3>
-                        <p>A topologia em árvore combina elementos das topologias em estrela e barramento, criando um sistema de hierarquia. Começa com um dispositivo no topo e vai se ramificando em várias sub-redes, como galhos de uma árvore.</p>
-                        <img src="img/img5.png"/>
-                        <p>É uma topologia muito eficiente com controle de tráfego e de fácil manutenção, porém também é dependente do dispositivo que cuida das sub-redes.</p>    
-                </ol>
-            </section>
-
-            <section class="formulario">
-                <form>
-                    <fieldset>
-                        <legend>Envie uma Avaliação</legend>
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome">
-                        <br>
-                        <br>
-
-                        <label>Nota:</label>
-                        <input type="radio" name="nota">5
-                        <input type="radio" name="nota">4
-                        <input type="radio" name="nota">3
-                        <input type="radio" name="nota">2
-                        <input type="radio" name="nota">1
-                        <br>
-                        <br>
-
-                        <label>Comentário:</label>
-                        <br>
-                        <textarea style="width: 600px; height: 200px;"></textarea>
-                        <br>
-                        <br>
-
-                        <button>Enviar Avaliação</button>
-                    </fieldset>
-                </form>
-            </section>
-
             <br>
-            <footer><strong>Trabalho feito por: Arthur Pomini</strong></footer>
-        </main>
-    </body>
+
+            <h2>Tipos de Topologias:</h2>
+            <ol>
+                <h3><li>Barramento</li></h3>
+                    <p>A topologia em barramento consiste em um cabo de rede central onde está conectado todos os outros dispositivos.</p>
+                    <img src="../img/img1.png"/>
+                    <p>É uma topologia simples e fácil de ser inserida, porém essa topologia traz algumas desvantagens como alto nível de congestionamento e a falha na confiabilidade, visto que se o cabo central sofrer algum problema, a rede inteira estará comprometida.</p>
+                <h3><li>Ponto a Ponto</li></h3>
+                    <p>Já a topologia ponto a ponto consiste em conectar todos os dispositivos da rede entre si, por isso do nome, está tudo ligado de ponto a ponto.</p>
+                    <img src="../img/img2.png"/>
+                    <p>É uma topologia muito positiva, já que o tráfego é bem mais controlado e não tem muito congestionamento. Porém, a desvantagem dela é seu alto custo, ou seja, para poder aderir a essa topologia é necessário investir em muitos cabos para ligar todos os dispositivos.</p>
+                <h3><li>Anel</li></h3>
+                    <p>A topologia em formato de anel quer dizer que os dispositivos conectados nas redes são conectados entre si de uma forma em que um computador se liga no próximo computador, e no anterior também.</p>
+                    <img src="../img/img3.png"/>
+                    <p>Desta forma, para uma informação ir de um dispositivo até outro dispositivo distante, será necessário que ele percorra por todos os dispositivos no caminho até chegar ao seu destino.</p>
+                    <p>A vantagem da topologia em anel é que não existe congestionamento, já que não possui caminhos compartilhados. A desvantagem é que quando um dispositivo apresenta problema, a rede toda é impactada.</p>
+                <h3><li>Estrela</li></h3>
+                    <p>Aqui, todos os dispositivos são conectados em um único ponto central, geralmente sendo um switch.</p>
+                    <img src="../img/img4.png"/>
+                    <p>A topologia tem ponto positivo na fácil manutenção, visto que é fácil encontrar o erro em algum dispositivo com problemas. Porém, a rede fica dependente do dispositivo central, que se ocorrer alguma falha, resultará em um impacto na rede toda.</p>
+                <h3><li>Árvore</li></h3>
+                    <p>A topologia em árvore combina elementos das topologias em estrela e barramento, criando um sistema de hierarquia. Começa com um dispositivo no topo e vai se ramificando em várias sub-redes, como galhos de uma árvore.</p>
+                    <img src="../img/img5.png"/>
+                    <p>É uma topologia muito eficiente com controle de tráfego e de fácil manutenção, porém também é dependente do dispositivo que cuida das sub-redes.</p>    
+            </ol>
+        </section>
+
+        <section class="formulario">
+            <form>
+                <fieldset>
+                    <legend>Envie uma Avaliação</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                    <br>
+                    <br>
+
+                    <label>Nota:</label>
+                    <input type="radio" name="nota">5
+                    <input type="radio" name="nota">4
+                    <input type="radio" name="nota">3
+                    <input type="radio" name="nota">2
+                    <input type="radio" name="nota">1
+                    <br>
+                    <br>
+
+                    <label>Comentário:</label>
+                    <br>
+                    <textarea style="width: 600px; height: 200px;"></textarea>
+                    <br>
+                    <br>
+
+                    <button>Enviar Avaliação</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <br>
+        <footer><strong>Trabalho feito por: Arthur Pomini</strong></footer>
+    </main>
+</body>
 </html>
