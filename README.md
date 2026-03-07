@@ -1,6 +1,6 @@
 # 💻 Disciplina Front End
 
-Este repositório contém todos os trabalhos e atividades desenvolvidos durante a disciplina de Front-End, realizada no 3º semestre do curso no ano de 2026. O foco é o aprender os fundamentos de Desenvolvimento Web.
+Este repositório contém todos os trabalhos e atividades desenvolvidos durante a disciplina de Front-End, realizada no 3º semestre do curso no ano de 2026. O foco é aprender os fundamentos de Desenvolvimento Web.
 
 ---
 
@@ -31,3 +31,4 @@ Este repositório contém todos os trabalhos e atividades desenvolvidos durante 
 - **Curso:** Engenharia de Software
 
 - **Autor:** Arthur V. S. Pomini
+
