@@ -1,0 +1,241 @@
+/* ROOT = VARIÁVEIS DO CSS*/
+:root {
+    --cor-fundo-principal: #282A36;
+    --cor-fundo-secundaria: #44475A;
+    --fonte-cor-principal: #BD93F9;
+    --fonte-cor-secundaria: #F8F8F2;
+    --fonte-destaque: #FF79C6;
+    --fonte-principal: 'Space Mono', sans-serif;
+    --fonte-secundaria: 'Roboto', sans-serif;
+}
+
+/* RESET DAS CONFIGURAÇÕES PADRÕES DO NAVEGADOR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-secundaria);
+}
+
+body {
+    background-color: var(--cor-fundo-principal);
+    color: var(--fonte-cor-secundaria);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--fonte-cor-principal);
+    font-family: var(--fonte-principal);
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    border-bottom: 2px solid var(--cor-fundo-secundaria);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+main, header, footer, section, nav {
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+nav {
+    background-color: var(--cor-fundo-secundaria);
+    padding: 20px 30px 20px 30px;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style: square;
+    color: var(--fonte-destaque);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 40px;
+}
+
+a {
+    color: var(--fonte-cor-secundaria);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--fonte-destaque);
+}
+
+li {
+    list-style-position: inside;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+header {
+    padding: 20px 0 20px 0;
+}
+
+header:not(#topo){
+    margin-top: 60px;
+}
+
+header p {
+    text-align: center;
+    color: var(--fonte-destaque);
+}
+
+details {
+    background-color: var(--fonte-destaque);
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+details summary {
+    color: var(--fonte-cor-secundaria);
+    font-weight: 500;
+    padding: 5px;
+}
+
+details p {
+    font-size: large;
+    padding: 5px 5px;
+    color: var(--cor-fundo-principal);
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+table {
+    text-align: center;
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 50%;
+    background-color: var(--cor-fundo-secundaria);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--cor-fundo-principal);
+    border-left: 1px solid var(--cor-fundo-principal);
+}
+
+th {
+    background-color: var(--fonte-destaque);
+    color: var(--fonte-cor-secundaria);
+    border-top: 1px solid var(--cor-fundo-principal);
+}
+
+caption {
+    background-color: var(--fonte-destaque);
+    color: var(--fonte-cor-secundaria);
+}
+
+#comandos-secretos pre, .konami{
+    font-size: large;
+    background-color: var(--cor-fundo-secundaria);
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#comandos-secretos code {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--cor-fundo-secundaria);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form {
+    background-color: var(--cor-fundo-secundaria);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+fieldset legend {
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+}
+
+fieldset {
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    display: inline-flexbox;
+}
+
+input, select, textarea {
+    background-color: var(--fonte-cor-principal);
+    border: 1px solid var(--cor-fundo-secundaria);
+    border-radius: 4px;
+    padding: 5px;
+    color: var(--fonte-cor-secundaria);
+    outline: none;
+    font-size: medium;
+}
+
+input:focus {
+    border-color: var(--fonte-cor-secundaria);
+}
+
+input[type="submit"] {
+    background-color: var(--fonte-destaque);
+    font-weight: bold;
+    font-size: large;
+    padding: 9px 14px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    border-color: var(--fonte-cor-secundaria);
+}
+
+#form fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#formulario fieldset{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5px;
+}
+
+#formulario textarea, input[type="submit"] {
+    grid-column: span 2;
+}
+
+#formulario textarea {
+    height: 80px;
+}
+
+#formulario-secreto fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5px;
+}
+
+#formulario-secreto textarea {
+    height: 60px;
+}
+
+footer {
+    text-align: center;
+}
