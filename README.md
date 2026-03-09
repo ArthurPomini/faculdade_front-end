@@ -14,6 +14,7 @@ Este repositório contém todos os trabalhos e atividades desenvolvidos durante 
 
 | Projeto | Descrição | Estado |
 | :--- | :--- | :--- |
+| **LinkTree Trabalhos** | Página com links que mandam direto para outros trabalhos. | Finalizado |
 | **Trabalho 1** | Página com imagem/gif e links de navegação. | Finalizado |
 | **Trabalho 2** | Conteúdo de disciplina já estudada no curso com feedback. | Finalizado |
 | **Trabalho 3** | Atividade CSS feita pelos alunos. | Finalizado |
@@ -32,5 +33,6 @@ Este repositório contém todos os trabalhos e atividades desenvolvidos durante 
 - **Curso:** Engenharia de Software
 
 - **Autor:** Arthur V. S. Pomini
+
 
 
