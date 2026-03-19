@@ -1,0 +1,257 @@
+h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+header, nav, section {
+    max-width: 75%;
+    margin: 100px auto;
+}
+
+header {
+    text-align: center;
+}
+
+header p {
+    font-size: 20px;
+}
+
+nav {
+    text-align: center;
+    font-weight: 500;
+}
+
+#pioneiros .cartoes {
+    padding: 30px;
+}
+
+#pioneiros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#pioneiros h2, aside {
+    grid-column: span 2;
+}
+
+#pioneiros aside {
+    text-align: center;
+    justify-self: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#pioneiros article {
+    justify-self: center;
+    width: 80%;
+}
+
+#bugs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#bugs h2 {
+    grid-column: span 2;
+}
+
+#bugs article {
+    justify-self: center;
+    width: 100%;
+}
+
+#bugs pre {
+    background-color: black;
+    color: lime;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#internet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#internet h2 {
+    grid-column: span 2;
+}
+
+#internet article {
+    justify-self: center;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+#internet #emojis {
+    grid-column: span 2;
+    justify-self: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#internet #emojis #rostos {
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#internet #emojis #rostos code {
+    background-color: gray;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: white;
+}
+
+#linguagens {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#linguagens article {
+    width: 100%;
+}
+
+#linguagens h2, #tabela {
+    grid-column: span 3;
+}
+
+th, td {
+    text-align: center;
+}
+
+#linha-do-tempo{
+    justify-content: center;
+    justify-self: center;
+}
+
+#linha-do-tempo h2 {
+    text-align: center;
+}
+
+#acidentes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+#acidentes h2 {
+    grid-column: span 3;
+}
+
+#acidentes article {
+    width: 100%;
+}
+
+#dinheiro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#dinheiro h2 {
+    grid-column: span 2;
+}
+
+#dinheiro article {
+    width: 100%;
+    text-align: center;
+}
+
+#easter-eggs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+#easter-eggs h2 {
+    grid-column: span 2;
+}
+
+#easter-eggs article {
+    justify-self: center;
+    width: 100%;
+}
+
+#comandos-secretos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#comandos-secretos h2, #senha {
+    grid-column: span 3;
+    width: 100%;
+}
+
+#comandos-secretos code {
+    font-size: large;
+}
+
+#comandos-secretos article, #senha {
+    text-align: center;
+    justify-self: center;
+    width: 100%;
+}
+
+#comandos-secretos pre, .konami {
+    font-size: large;
+}
+
+form {
+    justify-self: center;
+}
+
+fieldset, input, select, textarea {
+    width: 900px;
+}
+
+details {
+    color: black;
+}
