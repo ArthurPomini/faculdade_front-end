@@ -19,6 +19,7 @@ Este repositório contém todos os trabalhos e atividades desenvolvidos durante 
 | **Trabalho 2** | Conteúdo de disciplina já estudada no curso com feedback. | Finalizado |
 | **Trabalho 3** | Atividade CSS feita pelos alunos. | Finalizado |
 | **Trabalho 4** | Site com CSS feito com DaisyUI. | Finalizado |
+| **Trabalho 5** | Site com CSS feito com BootStrap. | Em Andamento |
 
 ---
 
