@@ -17,6 +17,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Imperial+Script&display=swap"
+        rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css" />
@@ -26,14 +32,14 @@
     <div class="container">
         <div id="pagina">
 
-            <div class="text-center">
+            <div class="text-center my-5">
                 <header id="topo">
-                    <h1>Arquivo (Quase) Perdido da Ciência da Computação</h1>
+                    <h1 class="text-primary great-vibes-regular" style="font-size: 60px;">Arquivo (Quase) Perdido da Ciência da Computação</h1>
                     <p>Uma coletânea caótica de fatos históricos, curiosos e inesperados.</p>
                 </header>
             </div>
 
-            <nav id="menu-principal" class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav id="menu-principal" class="navbar navbar-expand-lg bg-secondary rounded my-5">
                 <div class="container-fluid">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item"><a class="nav-link active" aria-current="page"
@@ -52,13 +58,12 @@
             </nav>
 
             <main>
-
                 <section id="pioneiros">
                     <h2 class="text-center">Pioneiros Esquecidos</h2>
 
-                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="row row-cols-1 row-cols-md-2 g-4 my-5">
                         <div class="col">
-                            <div class="card">
+                            <div class="card border-0 bg-dark text-light">
                                 <img src="../img/ada_lovelace.png" class="card-img-top" alt="ada lovelace img">
                                 <div class="card-body">
                                     <h3 class="card-title">Ada Lovelace</h3>
@@ -71,7 +76,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card">
+                            <div class="card border-0 bg-dark text-light">
                                 <img src="../img/alan_turing.png" class="card-img-top" alt="alan turing img">
                                 <div class="card-body">
                                     <h3 class="card-title">Alan Turing</h3>
@@ -86,7 +91,7 @@
                         </div>
                     </div>
 
-                    <div class="card w-100">
+                    <div class="card border-0 bg-primary text-light w-100 my-4">
                         <aside class="card-body">
                             <h4 class="text-center">Curiosidade lateral</h4>
                             <p class="text-center">Durante décadas, o trabalho de Turing foi mantido em segredo.</p>
@@ -95,29 +100,31 @@
                 </section>
 
                 <section id="bugs">
-                    <h2 class="text-center">Histórias de Bugs</h2>
+                    <div class="text-center">
+                        <h2 class="mt-5">Histórias de Bugs</h2>
 
-                    <div class="row">
-                        <div class="col-6">
-                            <article class="card">
-                                <div class="card-body">
-                                    <h3>O Primeiro Bug Real</h3>
-                                    <p>Uma mariposa encontrada em um computador em 1947.</p>
-                                    <figure>
-                                        <figcaption>Registro do bug colado no relatório técnico.</figcaption>
-                                    </figure>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-6">
-                            <article class="card">
-                                <div class="card-body">
-                                    <h3>O Vírus Creeper</h3>
-                                    <p>Primeiro vírus da história (1971).</p>
-                                    <p>Mensagem exibida:</p>
-                                    <pre>I'M THE CREEPER : CATCH ME IF YOU CAN</pre>
-                                </div>
-                            </article>
+                        <div class="row my-5">
+                            <div class="col-6">
+                                <article class="card border-0 bg-primary text-light h-100">
+                                    <div class="card-body">
+                                        <h3>O Primeiro Bug Real</h3>
+                                        <p>Uma mariposa encontrada em um computador em 1947.</p>
+                                        <figure>
+                                            <figcaption>Registro do bug colado no relatório técnico.</figcaption>
+                                        </figure>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-6">
+                                <article class="card border-0 bg-dark text-light h-100">
+                                    <div class="card-body">
+                                        <h3>O Vírus Creeper</h3>
+                                        <p>Primeiro vírus da história (1971).</p>
+                                        <p>Mensagem exibida:</p>
+                                        <pre>I'M THE CREEPER : CATCH ME IF YOU CAN</pre>
+                                    </div>
+                                </article>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -125,9 +132,9 @@
                 <section id="internet">
                     <div class="text-center">
                         <h2>Curiosidades da Internet</h2>
-                        <div class="row">
+                        <div class="row my-5">
                             <div class="col-4">
-                                <article class="card">
+                                <article class="card border-0 bg-secondary h-100">
                                     <div class="card-body">
                                         <h3>Primeiro Website</h3>
                                         <p>Criado em 1991 por Tim Berners-Lee.</p>
@@ -135,7 +142,7 @@
                                 </article>
                             </div>
                             <div class="col-4">
-                                <article class="card">
+                                <article class="card border-0 bg-primary text-light h-100">
                                     <div class="card-body">
                                         <h3>ARPANET</h3>
                                         <p>A precursora da internet moderna.</p>
@@ -147,7 +154,7 @@
                                 </article>
                             </div>
                             <div class="col-4">
-                                <article class="card">
+                                <article class="card border-0 bg-secondary h-100">
                                     <div class="card-body">
                                         <h3>Emojis e ASCII</h3>
                                         <p>Antes dos emojis gráficos, usávamos:</p>
@@ -162,12 +169,12 @@
                 </section>
 
                 <section id="linguagens">
-                    <div class="text-center">
+                    <div class="text-center my-5">
                         <h2>Linguagens de Programação</h2>
 
-                        <div class="row">
+                        <div class="row my-5">
                             <div class="col-4">
-                                <article class="card">
+                                <article class="card border-0 bg-primary text-light h-100">
                                     <div class="card-body">
                                         <h3>COBOL</h3>
                                         <p>Ainda usado em sistemas bancários.</p>
@@ -175,7 +182,7 @@
                                 </article>
                             </div>
                             <div class="col-4">
-                                <article class="card">
+                                <article class="card border-0 bg-secondary h-100">
                                     <div class="card-body">
                                         <h3>C</h3>
                                         <p>Base para muitos sistemas operacionais.</p>
@@ -183,7 +190,7 @@
                                 </article>
                             </div>
                             <div class="col-4">
-                                <article class="card">
+                                <article class="card border-0 bg-primary text-light h-100">
                                     <div class="card-body">
                                         <h3>HTML</h3>
                                         <p>Não é linguagem de programação, mas estrutura a web.</p>
@@ -193,7 +200,7 @@
                         </div>
                     </div>
 
-                    <div class="d-flex flex-column align-items-center">
+                    <div class="d-flex flex-column align-items-center text-center my-5">
                         <table class="table table-striped w-75">
                             <caption class="text-center">Linguagens e Ano de Criação</caption>
                             <thead>
@@ -228,7 +235,7 @@
                 <section id="linha-do-tempo">
                     <h2 class="text-center">Linha do Tempo Aleatória</h2>
 
-                    <div class="d-flex justify-content-center text-center">
+                    <div class="d-flex justify-content-center text-center my-5">
                         <ul class="list-unstyled border-start border-3 ps-4">
                             <li class="mb-4 position-relative">
                                 <div class="position-absolute top-0 start-0 translate-middle-x bg-primary rounded-circle"
@@ -694,7 +701,7 @@ Valor atual: melhor não calcular.
 
     </section> -->
     </div>
-    <div class="bg-primary text-center">
+    <div class="bg-primary text-light text-center py-4">
         <div class="container">
             <footer class="row">
                 <div class="col-4">

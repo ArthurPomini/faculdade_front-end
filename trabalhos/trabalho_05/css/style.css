@@ -1,0 +1,12 @@
+:root {
+    --bs-primary: #6610f2;
+    --bs-primary-rgb: 102, 16, 242;
+    --bs-secondary: #adb5bd;
+    --bs-secondary-rgb: 173, 181, 189;
+}
+
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
