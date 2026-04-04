@@ -24,7 +24,7 @@ Este repositório contém todos os trabalhos e atividades desenvolvidos durante 
 ---
 
 ## 🛠️ Como rodar os projetos
-1. Clone este repositório: `git clone https://github.com/ArthurPomini/faculdade_front-end_2026.git`
+1. Clone este repositório: `git clone https://github.com/ArthurPomini/faculdade_front-end.git`
 2. Navegue até a pasta do projeto desejado.
 3. Abra o arquivo `index.html` em seu navegador de preferência.
 
