@@ -34,7 +34,8 @@
 
             <div class="text-center my-5">
                 <header id="topo">
-                    <h1 class="text-primary great-vibes-regular" style="font-size: 60px;">Arquivo (Quase) Perdido da Ciência da Computação</h1>
+                    <h1 class="text-primary great-vibes-regular" style="font-size: 60px;">Arquivo (Quase) Perdido da
+                        Ciência da Computação</h1>
                     <p>Uma coletânea caótica de fatos históricos, curiosos e inesperados.</p>
                 </header>
             </div>
@@ -68,8 +69,8 @@
                                 <div class="card-body">
                                     <h3 class="card-title">Ada Lovelace</h3>
                                     <p class="card-text">Considerada a primeira programadora da história.</p>
-                                    <details>
-                                        <summary>Ver mais</summary>
+                                    <details class="dropdown">
+                                        <summary class="btn btn-secondary">Ver mais</summary>
                                         <p>Ela escreveu um algoritmo para a Máquina Analítica no século XIX.</p>
                                     </details>
                                 </div>
@@ -121,7 +122,7 @@
                                         <h3>O Vírus Creeper</h3>
                                         <p>Primeiro vírus da história (1971).</p>
                                         <p>Mensagem exibida:</p>
-                                        <pre>I'M THE CREEPER : CATCH ME IF YOU CAN</pre>
+                                        <pre class="text-primary">I'M THE CREEPER : CATCH ME IF YOU CAN</pre>
                                     </div>
                                 </article>
                             </div>
@@ -158,9 +159,9 @@
                                     <div class="card-body">
                                         <h3>Emojis e ASCII</h3>
                                         <p>Antes dos emojis gráficos, usávamos:</p>
-                                        <code>:-)</code>
-                                        <code>;-)</code>
-                                        <code>:-D</code>
+                                        <code class="text-dark">:-)</code>
+                                        <code class="text-dark">;-)</code>
+                                        <code class="text-dark">:-D</code>
                                     </div>
                                 </article>
                             </div>
@@ -274,177 +275,260 @@
             </main>
         </div>
 
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+        <header class="text-center">
+            <h1 class="text-primary great-vibes-regular" style="font-size: 60px;">Fatos Inúteis (Mas Incríveis) da
+                Ciência da Computação</h1>
+            <p>Informações que não vão melhorar seu código… mas vão melhorar sua aula.</p>
+        </header>
+
+        <nav id="menu-principal" class="navbar navbar-expand-lg bg-secondary rounded my-5">
+            <div class="container-fluid">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#nomes">Nomes
+                            Estranhos</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#acidentes">Acidentes
+                            Tecnológicos</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#dinheiro">Erros
+                            Caríssimos</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="#aleatorio">Aleatoriedades</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#form">Envie Algo
+                            Inútil</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+
+        <section id="nomes" class="text-center my-5">
+            <h2 class="my-5">Nomes Estranhos da Computação</h2>
+
+            <div class="row">
+                <div class="col-6">
+                    <article class="card bg-dark border-0 text-light">
+                        <div class="card-body">
+                            <h3>Spam vem de um presunto</h3>
+                            <p>
+                                O termo "spam" para emails indesejados vem de um esquete do
+                                <strong>Monty Python</strong> onde a palavra SPAM (marca de presunto enlatado)
+                                era repetida incessantemente.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-6">
+                    <article class="card bg-secondary border-0 h-100">
+                        <div class="card-body">
+                            <h3>Bluetooth tem nome viking</h3>
+                            <p>
+                                A tecnologia foi nomeada em homenagem ao rei
+                                <em>Harald "Bluetooth" Gormsson</em>, que unificou a Dinamarca.
+                                A ideia era “unificar dispositivos”.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12">
+                    <article class="card bg-primary border-0 text-light my-4">
+                        <div class="card-body">
+                            <h3>Bug é literalmente bug</h3>
+                            <p>
+                                O famoso inseto encontrado no computador
+                                <abbr title="Harvard Mark II">Mark II</abbr> em 1947
+                                era uma mariposa de verdade.
+                            </p>
+                            <details class="dropdown">
+                                <summary class="btn btn-secondary">Detalhe inútil</summary>
+                                <p>O inseto ainda está preservado em um museu.</p>
+                            </details>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="acidentes" class="text-center my-5">
+
+            <h2 class="my-5">Acidentes Tecnológicos Surpreendentes</h2>
+
+            <div class="row">
+                <div class="col-4">
+                    <article class="card bg-secondary border-0 h-100">
+                        <div class="card-body">
+                            <h3>O primeiro domínio registrado</h3>
+                            <p>
+                                O primeiro domínio da história foi
+                                <code>symbolics.com</code> registrado em 1985.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-4">
+                    <article class="card bg-primary border-0 text-light h-100">
+                        <div class="card-body">
+                            <h3>O erro que quase causou guerra nuclear</h3>
+                            <p>
+                                Em 1983, um sistema soviético detectou falsamente mísseis americanos.
+                                O oficial Stanislav Petrov decidiu ignorar o alerta.
+                            </p>
+                            <blockquote>
+                                Um bug pode ter salvo o mundo.
+                            </blockquote>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-4">
+                    <article class="card bg-secondary border-0 h-100">
+                        <div class="card-body">
+                            <h3>O computador que pesava 27 toneladas</h3>
+                            <p>
+                                O ENIAC ocupava 167 m² e consumia energia suficiente para escurecer parte da cidade.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="dinheiro" class="text-center my-5">
+
+            <h2>Erros Caríssimos</h2>
+
+            <div class="row">
+                <div class="col-6">
+                    <article class="card bg-dark border-0 text-light h-100">
+                        <div class="card-body">
+                            <h3>O traço que custou milhões</h3>
+                            <p>
+                                Em 1962, a NASA perdeu a sonda Mariner 1 por causa de um erro em uma fórmula matemática:
+                                faltava um simples hífen.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-6">
+                    <article class="card bg-secondary border-0 h-100">
+                        <div class="card-body">
+                            <h3>Bitcoin jogado no lixo</h3>
+                            <p>
+                                Um homem no Reino Unido descartou um HD com 8.000 bitcoins.
+                            </p>
+                            <pre class="text-primary">Valor atual: melhor não calcular.</pre>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="aleatorio" class="my-5">
+
+            <h2 class="text-center my-5">Coisas Aleatórias que Você Não Pediu</h2>
+
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            O primeiro emoticon
+                        </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            :-) foi sugerido em 1982 por Scott Fahlman.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            A senha mais usada no mundo
+                        </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <strong>123456</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            O google já quebrou a internet
+                        </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Em 2009, o Google marcou acidentalmente todos os sites como maliciosos por 40 minutos.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            Computadores odeiam calor
+                        </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Um data center pode usar mais água para resfriamento do que uma pequena cidade.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="text-center my-5">
+
+            <h2>Tabela Totalmente Necessária</h2>
+
+            <div class="d-flex flex-column align-items-center text-center my-5">
+                <table class="table table-striped w-75">
+                    <thead>
+                        <tr>
+                            <th>Curiosidade</th>
+                            <th>Nível de Inutilidade</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td>Spam vem de presunto</td>
+                            <td>Alto</td>
+                        </tr>
+                        <tr>
+                            <td>Bluetooth é viking</td>
+                            <td>Médio</td>
+                        </tr>
+                        <tr>
+                            <td>Senha mais usada é 123456</td>
+                            <td>Crítico</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
         <!-- <header>
-        <h1>Fatos Inúteis (Mas Incríveis) da Ciência da Computação</h1>
-        <p>Informações que não vão melhorar seu código… mas vão melhorar sua aula.</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#nomes">Nomes Estranhos</a></li>
-            <li><a href="#acidentes">Acidentes Tecnológicos</a></li>
-            <li><a href="#dinheiro">Erros Caríssimos</a></li>
-            <li><a href="#aleatorio">Aleatoriedades</a></li>
-            <li><a href="#form">Envie Algo Inútil</a></li>
-        </ul>
-    </nav>
-
-
-
-    <section id="nomes">
-        <h2>Nomes Estranhos da Computação</h2>
-
-        <article>
-            <h3>Spam vem de um presunto</h3>
-            <p>
-                O termo "spam" para emails indesejados vem de um esquete do
-                <strong>Monty Python</strong> onde a palavra SPAM (marca de presunto enlatado)
-                era repetida incessantemente.
-            </p>
-        </article>
-
-        <article>
-            <h3>Bluetooth tem nome viking</h3>
-            <p>
-                A tecnologia foi nomeada em homenagem ao rei
-                <em>Harald "Bluetooth" Gormsson</em>, que unificou a Dinamarca.
-                A ideia era “unificar dispositivos”.
-            </p>
-        </article>
-
-        <article>
-            <h3>Bug é literalmente bug</h3>
-            <p>
-                O famoso inseto encontrado no computador
-                <abbr title="Harvard Mark II">Mark II</abbr> em 1947
-                era uma mariposa de verdade.
-            </p>
-            <details>
-                <summary>Detalhe inútil</summary>
-                <p>O inseto ainda está preservado em um museu.</p>
-            </details>
-        </article>
-
-    </section>
-
-
-    <section id="acidentes">
-
-        <h2>Acidentes Tecnológicos Surpreendentes</h2>
-
-        <article>
-            <h3>O primeiro domínio registrado</h3>
-            <p>
-                O primeiro domínio da história foi
-                <code>symbolics.com</code> registrado em 1985.
-            </p>
-        </article>
-
-        <article>
-            <h3>O erro que quase causou guerra nuclear</h3>
-            <p>
-                Em 1983, um sistema soviético detectou falsamente mísseis americanos.
-                O oficial Stanislav Petrov decidiu ignorar o alerta.
-            </p>
-            <blockquote>
-                Um bug pode ter salvo o mundo.
-            </blockquote>
-        </article>
-
-        <article>
-            <h3>O computador que pesava 27 toneladas</h3>
-            <p>
-                O ENIAC ocupava 167 m² e consumia energia suficiente para escurecer parte da cidade.
-            </p>
-        </article>
-
-    </section>
-
-
-    <section id="dinheiro">
-
-        <h2>Erros Caríssimos</h2>
-
-        <article>
-            <h3>O traço que custou milhões</h3>
-            <p>
-                Em 1962, a NASA perdeu a sonda Mariner 1 por causa de um erro em uma fórmula matemática:
-                faltava um simples hífen.
-            </p>
-        </article>
-
-        <article>
-            <h3>Bitcoin jogado no lixo</h3>
-            <p>
-                Um homem no Reino Unido descartou um HD com 8.000 bitcoins.
-            </p>
-            <pre>
-Valor atual: melhor não calcular.
-        </pre>
-        </article>
-
-    </section>
-
-
-    <section id="aleatorio">
-
-        <h2>Coisas Aleatórias que Você Não Pediu</h2>
-
-        <article>
-            <h3>O primeiro emoticon</h3>
-            <p>
-                :-) foi sugerido em 1982 por Scott Fahlman.
-            </p>
-        </article>
-
-        <article>
-            <h3>A senha mais usada do mundo</h3>
-            <p><strong>123456</strong></p>
-        </article>
-
-        <article>
-            <h3>O Google já quebrou a internet</h3>
-            <p>
-                Em 2009, o Google marcou acidentalmente todos os sites como maliciosos por 40 minutos.
-            </p>
-        </article>
-
-        <article>
-            <h3>Computadores odeiam calor</h3>
-            <p>
-                Um data center pode usar mais água para resfriamento do que uma pequena cidade.
-            </p>
-        </article>
-
-    </section>
-
-
-    <section>
-
-        <h2>Tabela Totalmente Necessária</h2>
-
-        <table border="1">
-            <tr>
-                <th>Curiosidade</th>
-                <th>Nível de Inutilidade</th>
-            </tr>
-            <tr>
-                <td>Spam vem de presunto</td>
-                <td>Alto</td>
-            </tr>
-            <tr>
-                <td>Bluetooth é viking</td>
-                <td>Médio</td>
-            </tr>
-            <tr>
-                <td>Senha mais usada é 123456</td>
-                <td>Crítico</td>
-            </tr>
-        </table>
-
-    </section>
-
-    <header>
         <h1>Coisas Que Seus Professores Não Contaram Sobre Computação</h1>
         <p>Fatos obscuros, bugs absurdos e Easter eggs históricos.</p>
     </header>
@@ -701,6 +785,7 @@ Valor atual: melhor não calcular.
 
     </section> -->
     </div>
+
     <div class="bg-primary text-light text-center py-4">
         <div class="container">
             <footer class="row">
