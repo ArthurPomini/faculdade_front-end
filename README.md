@@ -14,12 +14,12 @@ Este repositório contém todos os trabalhos e atividades desenvolvidos durante 
 
 | Projeto | Descrição | Estado |
 | :--- | :--- | :--- |
-| **LinkTree Trabalhos** | Página com links que mandam direto para outros trabalhos. | Finalizado |
-| **Trabalho 1** | Página com imagens das minhas pinturas prediletas. | Finalizado |
-| **Trabalho 2** | Conteúdo de disciplina já estudada no curso com feedback. | Finalizado |
-| **Trabalho 3** | Atividade CSS feita pelos alunos. | Finalizado |
-| **Trabalho 4** | Site com CSS feito com DaisyUI. | Finalizado |
-| **Trabalho 5** | Site com CSS feito com BootStrap. | Finalizado |
+| **LinkTree Trabalhos** | Página com links que mandam direto para os trabalhos. | Finalizado |
+| **Trabalho 1** | Página HTML com imagens das minhas pinturas prediletas. | Finalizado |
+| **Trabalho 2** | HTML + CSS de conteúdo já estudado no curso (tema: Topologias em Redes). | Finalizado |
+| **Trabalho 3** | HTML (entregue pelo professor) + CSS realizado pelo aluno. | Finalizado |
+| **Trabalho 4** | HTML (entregue pelo professor) + CSS feito com DaisyUI. | Finalizado |
+| **Trabalho 5** | HTML (entregue pelo professor) + CSS feito com BootStrap. | Finalizado |
 
 ---
 
