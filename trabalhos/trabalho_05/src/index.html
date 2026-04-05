@@ -32,13 +32,11 @@
     <div class="container">
         <div id="pagina">
 
-            <div class="text-center my-5">
-                <header id="topo">
-                    <h1 class="text-primary great-vibes-regular" style="font-size: 60px;">Arquivo (Quase) Perdido da
-                        Ciência da Computação</h1>
-                    <p>Uma coletânea caótica de fatos históricos, curiosos e inesperados.</p>
-                </header>
-            </div>
+            <header id="topo" class="text-center my-5">
+                <h1 class="text-primary great-vibes-regular" style="font-size: 60px;">Arquivo (Quase) Perdido da
+                    Ciência da Computação</h1>
+                <p>Uma coletânea caótica de fatos históricos, curiosos e inesperados.</p>
+            </header>
 
             <nav id="menu-principal" class="navbar navbar-expand-lg bg-secondary rounded my-5">
                 <div class="container-fluid">
@@ -300,9 +298,6 @@
             </div>
         </nav>
 
-
-
-
         <section id="nomes" class="text-center my-5">
             <h2 class="my-5">Nomes Estranhos da Computação</h2>
 
@@ -351,7 +346,6 @@
 
         </section>
 
-
         <section id="acidentes" class="text-center my-5">
 
             <h2 class="my-5">Acidentes Tecnológicos Surpreendentes</h2>
@@ -363,7 +357,7 @@
                             <h3>O primeiro domínio registrado</h3>
                             <p>
                                 O primeiro domínio da história foi
-                                <code>symbolics.com</code> registrado em 1985.
+                                <code class="text-primary">symbolics.com</code> registrado em 1985.
                             </p>
                         </div>
                     </article>
@@ -398,7 +392,6 @@
 
         </section>
 
-
         <section id="dinheiro" class="text-center my-5">
 
             <h2>Erros Caríssimos</h2>
@@ -429,7 +422,6 @@
                 </div>
             </div>
         </section>
-
 
         <section id="aleatorio" class="my-5">
 
@@ -481,12 +473,12 @@
                 <div class="accordion-item">
                     <h3 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                            aria-controls="panelsStayOpen-collapseThree">
+                            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseFour">
                             Computadores odeiam calor
                         </button>
                     </h3>
-                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
                         <div class="accordion-body">
                             Um data center pode usar mais água para resfriamento do que uma pequena cidade.
                         </div>
@@ -495,7 +487,6 @@
             </div>
 
         </section>
-
 
         <section class="text-center my-5">
 
@@ -528,262 +519,357 @@
 
         </section>
 
-        <!-- <header>
-        <h1>Coisas Que Seus Professores Não Contaram Sobre Computação</h1>
-        <p>Fatos obscuros, bugs absurdos e Easter eggs históricos.</p>
-    </header>
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
 
-    <nav>
-        <ul>
-            <li><a href="#easter-eggs">Easter Eggs</a></li>
-            <li><a href="#bugs-absurdos">Bugs Absurdos</a></li>
-            <li><a href="#comandos-secretos">Comandos Estranhos</a></li>
-            <li><a href="#formulario-secreto">Envie Algo Suspeito</a></li>
-        </ul>
-    </nav>
+        <header class="text-center my-5">
+            <h1 class="great-vibes-regular text-primary" style="font-size: 60px;">Coisas Que Seus Professores Não
+                Contaram Sobre Computação</h1>
+            <p>Fatos obscuros, bugs absurdos e Easter eggs históricos.</p>
+        </header>
+
+        <nav id="menu-principal" class="navbar navbar-expand-lg bg-secondary rounded my-5">
+            <div class="container-fluid">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#easter-eggs">Easter
+                            Eggs</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#bugs-absurdos">Bugs
+                            Absurdos</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="#comandos-secretos">Comandos Estranhos</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#formulario-secreto">Envie
+                            Algo Suspeito</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="easter-eggs" class="my-5">
+
+            <h2 class="text-center mb-5">Easter Eggs Reais e Oficiais</h2>
+
+            <div class="row">
+                <div></div>
+                <div class="col-3">
+                    <article class="card bg-dark text-light h-100">
+                        <div class="card-body">
+                            <h3>O Excel 97 tinha um simulador de voo escondido</h3>
+                            <p>
+                                O Microsoft Excel 97 escondia um jogo 3D estilo simulador de voo
+                                dentro da planilha.
+                            </p>
+                            <details class="dropdown">
+                                <summary class="btn btn-secondary">Como ativava?</summary>
+                                <p>Era preciso selecionar células específicas e usar combinações absurdas de teclado.
+                                </p>
+                            </details>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-3">
+                    <article class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h3>O Google tem um T-Rex escondido</h3>
+                            <p>
+                                Quando você fica sem internet no Chrome, aparece um dinossauro.
+                                Se apertar espaço, começa um jogo infinito.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-3">
+                    <article class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h3>O Windows 95 tinha créditos escondidos</h3>
+                            <p>
+                                Desenvolvedores colocaram seus nomes escondidos dentro do sistema.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-3">
+                    <article class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h3>O GitHub já teve um unicórnio voador</h3>
+                            <p>
+                                Em versões antigas, existia um modo visual alternativo escondido.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="bugs-absurdos" class="my-5">
+
+            <h2 class="text-center mb-5">Bugs Absurdos da História</h2>
+
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            O bug que destruiu um foguete em 37 segundos
+                        </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            Em 1996, o foguete Ariane 5 explodiu por causa de uma conversão de número
+                            de 64 bits para 16 bits. Custo do erro: aproximadamente 370 milhões de dólares.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            O Y2K (Bug do Milênio)
+                        </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Sistemas antigos usavam apenas dois dígitos para o ano.
+                            Em 2000, poderiam interpretar "00" como 1900. O mundo gastou bilhões se preparando...
+                            e quase nada aconteceu.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            O bug do Pentium
+                        </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Um erro microscópico na divisão de números em processadores Intel
+                            causava resultados errados em cálculos específicos.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseFour">
+                            O erro que duplicou dinheiro
+                        </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Em 2012, um bug em um banco permitiu que clientes sacassem valores inexistentes.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="comandos-secretos" class="text-center my-5">
+
+            <h2 class="text-center mb-5">Comandos Estranhos e Inúteis</h2>
+
+            <div class="row">
+                <div class="col-6">
+                    <article class="card bg-primary border-0 text-light h-100">
+                        <div class="card-body">
+                            <h3>Konami Code</h3>
+                            <p style="font-size: 20px;">
+                                ↑ ↑ ↓ ↓ ← → ← → B A
+                            </p>
+                            <p>
+                                Usado em dezenas de jogos e até em sites modernos.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-6">
+                    <article class="card bg-secondary border-0 h-100">
+                        <div class="card-body">
+                            <h3>sudo make me a sandwich</h3>
+                            <pre class="text-primary" style="font-size: 20px;">$ sudo make me a sandwich.<br>Okay.</pre>
+                            <p>Alguns sistemas Linux realmente respondem a isso.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-6 mt-3">
+                    <article class="card bg-primary border-0 text-light h-100">
+                        <div class="card-body">
+                            <h3>O comando que trava o Windows</h3>
+                            <pre style="font-size: 20px;">CON CON</pre>
+                            <p>
+                                No Windows antigo, criar uma pasta chamada CON era impossível.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-6 mt-3">
+                    <article class="card bg-secondary border-0 h-100">
+                        <div class="card-body">
+                            <h3>A senha mais comum do planeta</h3>
+                            <code class="text-primary" style="font-size: 20px;">123456</code>
+                            <p>
+                                Continua sendo campeã mundial.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2 class="text-center my-5">Tabela do Caos Digital</h2>
+
+            <div class="d-flex flex-column align-items-center text-center my-5">
+                <table class="table table-striped w-75">
+                    <thead>
+                        <tr>
+                            <th>Evento</th>
+                            <th>Nível de Caos</th>
+                            <th>Custo Aproximado</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td>Ariane 5</td>
+                            <td>Explosivo</td>
+                            <td>370 milhões USD</td>
+                        </tr>
+                        <tr>
+                            <td>Bug do Pentium</td>
+                            <td>Matemático</td>
+                            <td>475 milhões USD</td>
+                        </tr>
+                        <tr>
+                            <td>Y2K</td>
+                            <td>Psicológico</td>
+                            <td>Bilhões USD</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
 
 
-    <section id="easter-eggs">
+        <section id="form" class="card bg-dark text-light">
+            <div class="card-body">
+                <h2 class="text-center mb-4">Envie um Fato Inútil</h2>
 
-        <h2>Easter Eggs Reais e Oficiais</h2>
+                <form>
+                    <fieldset>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Fato Inútil</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
 
-        <article>
-            <h3>O Excel 97 tinha um simulador de voo escondido</h3>
-            <p>
-                O Microsoft Excel 97 escondia um jogo 3D estilo simulador de voo
-                dentro da planilha.
-            </p>
-            <details>
-                <summary>Como ativava?</summary>
-                <p>Era preciso selecionar células específicas e usar combinações absurdas de teclado.</p>
-            </details>
-        </article>
+                        <label for="range0" class="form-label">Grau de inutilidade (0-10):</label>
+                        <output for="range0" id="rangeValue0" aria-hidden="true"></output>
+                        <input type="range" class="form-range" min="0" max="10" value="5" id="range0">
 
-        <article>
-            <h3>O Google tem um T-Rex escondido</h3>
-            <p>
-                Quando você fica sem internet no Chrome, aparece um dinossauro.
-                Se apertar espaço, começa um jogo infinito.
-            </p>
-        </article>
+                        <button type="button" class="btn btn-secondary text-dark btn-lg w-100">Enviar
+                            inutilidade</button>
+                    </fieldset>
+                </form>
+            </div>
 
-        <article>
-            <h3>O Windows 95 tinha créditos escondidos</h3>
-            <p>
-                Desenvolvedores colocaram seus nomes escondidos dentro do sistema.
-            </p>
-        </article>
+        </section>
 
-        <article>
-            <h3>O GitHub já teve um unicórnio voador</h3>
-            <p>
-                Em versões antigas, existia um modo visual alternativo escondido.
-            </p>
-        </article>
+        <section id="formulario" class="card bg-primary border-0 text-light mt-5">
+            <div class="card-body">
+                <h2 class="text-center mb-3">Envie sua Curiosidade</h2>
 
-    </section>
+                <form>
+                    <fieldset>
 
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                        </div>
 
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
 
-    <section id="bugs-absurdos">
-
-        <h2>Bugs Absurdos da História</h2>
-
-        <article>
-            <h3>O bug que destruiu um foguete em 37 segundos</h3>
-            <p>
-                Em 1996, o foguete Ariane 5 explodiu por causa de uma conversão de número
-                de 64 bits para 16 bits.
-            </p>
-            <blockquote>
-                Custo do erro: aproximadamente 370 milhões de dólares.
-            </blockquote>
-        </article>
-
-        <article>
-            <h3>O Y2K (Bug do Milênio)</h3>
-            <p>
-                Sistemas antigos usavam apenas dois dígitos para o ano.
-                Em 2000, poderiam interpretar "00" como 1900.
-            </p>
-            <p>
-                O mundo gastou bilhões se preparando... e quase nada aconteceu.
-            </p>
-        </article>
-
-        <article>
-            <h3>O bug do Pentium</h3>
-            <p>
-                Um erro microscópico na divisão de números em processadores Intel
-                causava resultados errados em cálculos específicos.
-            </p>
-        </article>
-
-        <article>
-            <h3>O erro que duplicou dinheiro</h3>
-            <p>
-                Em 2012, um bug em um banco permitiu que clientes sacassem valores inexistentes.
-            </p>
-        </article>
-
-    </section>
+                        <label>Categoria:</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Pioneiros</option>
+                            <option value="1">Bugs</option>
+                            <option value="2">Internet</option>
+                            <option value="3">Linguagens</option>
+                        </select>
 
 
+                        <div class="mb-3">
+                            <label for="dataFato" class="form-label">Data do Fato</label>
+                            <input type="date" class="form-control" id="dataFato">
+                        </div>
 
-    <section id="comandos-secretos">
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Fato Inútil</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
 
-        <h2>Comandos Estranhos e Inúteis</h2>
+                        <button type="button" class="btn btn-dark btn-lg w-100">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
 
-        <article>
-            <h3>Konami Code</h3>
-            <p class="konami">
-                ↑ ↑ ↓ ↓ ← → ← → B A
-            </p>
-            <p>
-                Usado em dezenas de jogos e até em sites modernos.
-            </p>
-        </article>
+        <section id="formulario-secreto" class="card bg-secondary border-0 my-5">
+            <div class="card-body">
+                <h2 class="text-center mb-3">Envie um Bug ou Easter Egg</h2>
 
-        <article>
-            <h3>sudo make me a sandwich</h3>
-            <pre>$ sudo make me a sandwich.<br>Okay.</pre>
-            <p>Alguns sistemas Linux realmente respondem a isso.</p>
-        </article>
+                <form>
+                    <fieldset>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                        </div>
 
-        <article>
-            <h3>O comando que trava o Windows</h3>
-            <pre>CON CON</pre>
-            <p>
-                No Windows antigo, criar uma pasta chamada CON era impossível.
-            </p>
-        </article>
+                        <label>Tipo:</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Bug</option>
+                            <option value="1">Easter Egg</option>
+                            <option value="2">Comando Estranho</option>
+                        </select>
 
-        <article>
-            <h3>A senha mais comum do planeta</h3>
-            <code>123456</code>
-            <p>
-                Continua sendo campeã mundial.
-            </p>
-        </article>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Descrição</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
 
-    </section>
+                        <label for="range1" class="form-label">Grau de estranheza (1-10):</label>
+                        <output for="range1" id="rangeValue1" aria-hidden="true"></output>
+                        <input type="range" class="form-range" min="1" max="10" value="1" id="range1">
 
+                        <button type="button" class="btn btn-primary btn-lg w-100">Enviar para os arquivos
+                            secretos</button>
 
+                    </fieldset>
+                </form>
+            </div>
 
-    <section>
-
-        <h2>Tabela do Caos Digital</h2>
-
-        <table border="1">
-            <tr>
-                <th>Evento</th>
-                <th>Nível de Caos</th>
-                <th>Custo Aproximado</th>
-            </tr>
-            <tr>
-                <td>Ariane 5</td>
-                <td>Explosivo</td>
-                <td>370 milhões USD</td>
-            </tr>
-            <tr>
-                <td>Bug do Pentium</td>
-                <td>Matemático</td>
-                <td>475 milhões USD</td>
-            </tr>
-            <tr>
-                <td>Y2K</td>
-                <td>Psicológico</td>
-                <td>Bilhões USD</td>
-            </tr>
-        </table>
-
-    </section>
-
-
-    <section id="form">
-
-        <h2>Envie um Fato Inútil</h2>
-
-        <form>
-            <fieldset>
-                <legend>Cadastro de Inutilidades</legend>
-
-                <label>Nome:</label>
-                <input type="text" name="nome">
-
-                <label>Fato Inútil:</label>
-                <input type="text" name="fato">
-
-                <label>Grau de inutilidade (0-10):</label>
-                <input type="number" name="grau" min="0" max="10">
-
-                <input type="submit" value="Enviar inutilidade">
-            </fieldset>
-        </form>
-
-    </section>
-    <section id="formulario">
-        <h2>Envie sua Curiosidade</h2>
-
-        <form>
-            <fieldset>
-                <legend>Informações</legend>
-
-                <label>Nome:</label>
-                <input type="text" name="nome">
-
-                <label>Email:</label>
-                <input type="email" name="email">
-
-                <label>Categoria:</label>
-                <select name="categoria">
-                    <option>Pioneiros</option>
-                    <option>Bugs</option>
-                    <option>Internet</option>
-                    <option>Linguagens</option>
-                </select>
-
-                <label>Data do fato:</label>
-                <input type="date" name="data">
-
-                <label>Sua curiosidade:</label>
-                <textarea name="curiosidade"></textarea>
-
-                <input type="submit" value="Enviar">
-            </fieldset>
-        </form>
-    </section>
-
-
-    <section id="formulario-secreto">
-
-        <h2>Envie um Bug ou Easter Egg</h2>
-
-        <form>
-            <fieldset>
-                <legend>Cadastro Suspeito</legend>
-
-                <label>Seu nome:</label>
-                <input type="text" name="nome">
-
-                <label>Tipo:</label>
-                <select name="tipo">
-                    <option>Bug</option>
-                    <option>Easter Egg</option>
-                    <option>Comando estranho</option>
-                </select>
-
-                <label>Descrição:</label>
-                <textarea name="descricao"></textarea>
-
-                <label>Grau de estranheza (1-10):</label>
-                <input type="number" min="1" max="10">
-
-                <input type="submit" value="Enviar para os arquivos secretos">
-            </fieldset>
-        </form>
-
-    </section> -->
+        </section>
     </div>
 
     <div class="bg-primary text-light text-center py-4">
@@ -808,6 +894,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script>
+        const rangeInput0 = document.getElementById('range0');
+        const rangeOutput0 = document.getElementById('rangeValue0');
+
+        rangeOutput0.textContent = rangeInput0.value;
+
+        rangeInput0.addEventListener('input', function () {
+            rangeOutput0.textContent = this.value;
+        });
+
+        const rangeInput1 = document.getElementById('range1');
+        const rangeOutput1 = document.getElementById('rangeValue1');
+
+        rangeOutput1.textContent = rangeInput1.value;
+
+        rangeInput1.addEventListener('input', function () {
+            rangeOutput1.textContent = this.value;
+        });
+    </script>
 </body>
 
 </html>
