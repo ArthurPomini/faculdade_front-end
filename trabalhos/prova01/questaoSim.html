@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questoes da Prova - Front-end</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cor-primaria: #439525;
+            --cor-secundaria: #867c7c;
+        }
+
+        .container {
+            margin: 0 200px;
+        }
+
+        .cartao {
+            background-color: var(--cor-primaria);
+            border-radius: 10px;
+            padding: 30px;
+            margin: 20px 0;
+        }
+
+        body {
+            background-color: var(--cor-secundaria);
+        }
+
+        nav {
+            background-color: #524f4f;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+        }
+
+        li {
+            font-size: 20px;
+            margin: 0 auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: white;
+        }
+
+        a:hover {
+            color: var(--cor-primaria);
+            transition: 0.2s;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        p {
+            font-family: 'Roboto', monospace;
+            font-size: 18px;
+            color: white;
+        }
+
+        #imagem {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        #botaoImg {
+            background-color: var(--cor-primaria);
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            display: flex;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Informações sobre a Copa Do Mundo</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#sedes">Organizações e Sedes</a></li>
+            <li><a href="#formato">Novo Formato</a></li>
+            <li><a href="#impacto">Expectativas e Impacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="sedes" class="cartao">
+            <h2>🌍 Organização e Sedes</h2>
+            <p>A Copa do Mundo FIFA de 2026 será a primeira edição realizada em três países: Estados Unidos, Canadá e México. 
+                Essa será também a maior Copa da história em número de cidades-sede, com partidas distribuídas por diversas regiões da América do Norte, 
+                ampliando o alcance global do torneio.
+            </p>
+        </section>
+        
+        <section id="formato" class="cartao">
+            <h2>⚽ Novo Formato</h2>
+            <p>O torneio contará com 48 seleções, em vez das tradicionais 32. As equipes serão divididas em grupos, aumentando o 
+                número total de jogos e dando mais oportunidades para países de diferentes continentes participarem. Essa mudança foi promovida pela FIFA 
+                para tornar a competição mais inclusiva e competitiva.
+            </p>
+        </section>
+
+        <section id="impacto" class="cartao">
+            <h2>🏆 Expectativas e Impacto</h2>
+            <p>A edição de 2026 promete ser uma das mais assistidas da história, com grande impacto econômico e cultural nos países-sede. 
+                Além disso, seleções tradicionais e emergentes devem protagonizar jogos de alto nível, aumentando ainda mais o interesse global pelo futebol 
+                e fortalecendo o esporte em novas regiões.
+            </p>
+        </section>
+
+        <button id="botaoImg" onclick="addImg()"">Ver tabela de jogos</button>
+        <img id="imagem" src="img/Tabela_Jogos.png" style="display: none;">
+    </main>
+</div>
+<script>
+    const img = document.querySelector('#imagem')
+    function addImg() {
+        img.style.display = 'block'
+    }
+</script>
+</body>
+</html>
