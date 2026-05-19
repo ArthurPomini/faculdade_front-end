@@ -7,6 +7,7 @@ Este repositório contém todos os trabalhos e atividades desenvolvidos durante 
 ## 🚀 Tecnologias Estudadas
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JS](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
 ---
 
@@ -20,6 +21,7 @@ Este repositório contém todos os trabalhos e atividades desenvolvidos durante 
 | **Trabalho 3** | HTML (entregue pelo professor) + CSS realizado pelo aluno. | Finalizado |
 | **Trabalho 4** | HTML (entregue pelo professor) + CSS feito com DaisyUI. | Finalizado |
 | **Trabalho 5** | HTML (entregue pelo professor) + CSS feito com BootStrap. | Finalizado |
+| **Trabalho 7** | Atividades com JavaScript | Finalizado |
 
 ---
 
