@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 07 - Validador de Cartão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="box">
+    <h3>Validador de Segurança Infinity</h3>
+    
+    <label>Número do Cartão:</label><br>
+    <input type="text" id="cartaoInput" maxlength="20" style="width: 95%; margin-bottom: 10px;"><br>
+    
+    <button onclick="analisarCartao()">Analisar Cartão</button>
+
+    <!-- O painel começa escondido -->
+    <div id="painel" style="display: none; margin-top: 20px;">
+        <h4>Painel de Informações</h4>
+        <p>Status: <span id="statusTxt"></span></p>
+        
+        <table>
+            <tr>
+                <td><b>Bandeira:</b></td>
+                <td id="bandeiraTxt"></td>
+            </tr>
+            <tr>
+                <td><b>Categoria de Setor:</b></td>
+                <td id="setorTxt"></td>
+            </tr>
+            <tr>
+                <td><b>Banco Emissor (IIN):</b></td>
+                <td id="bancoTxt"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script src="js.js"></script>
+</body>
+</html>

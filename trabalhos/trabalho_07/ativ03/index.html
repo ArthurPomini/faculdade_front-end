@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculadora Média</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div id="top">
+        <h1>Calcule sua média escolar</h1>
+
+        <div id="nome">
+            <p>Nome</p>
+            <input type="text">
+        </div>
+        <div class="nota">
+            <p>Nota 1</p>
+            <input id="n1" type="number" min="0" max="10">
+        </div>
+        <div class="nota">
+            <p>Nota 2</p>
+            <input id="n2" type="number" min="0" max="10">
+        </div>
+        <div class="nota">
+            <p>Nota 3</p>
+            <input id="n3" type="number" min="0" max="10">
+        </div>
+        <button onclick="calcMedia()">CALCULAR MÉDIA</button>
+    </div>
+    <div id="res"></div>
+</div>
+<script src="js.js"></script>
+</body>
+</html>

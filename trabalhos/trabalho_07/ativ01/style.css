@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-princ: rgb(192, 0, 0);
+    --cor-preto: black;
+    --cor-branco: white;
+}
+
+/* CLASSES--------------------------------------------------- */
+
+.container {
+    margin: 0 25%;
+}
+
+.correto {
+    color: lime;
+}
+
+.incorreto {
+    color: red;
+}
+
+/* ELEMENTOS--------------------------------------------------- */
+
+body {
+    background-color: var(--cor-princ);
+    text-align: center;
+}
+
+h1 {
+    color: var(--cor-branco);
+    font-family: 'Roboto', monospace;
+    font-size: 56px;
+    font-weight: bold;
+    margin: 150px 0;
+}
+
+input {
+    padding: 15px;
+    width: 300px;
+    font-size: 16px;
+
+    border: 2px solid var(--cor-princ);
+    border-radius: 5px;
+}
+
+input:focus {
+    color: var(--cor-branco);
+    background-color: rgba(255, 87, 87, 0.301);
+    outline: none;
+    border: 2px solid red;
+}
+
+input:focus::placeholder {
+    color: var(--cor-branco);
+}
+
+button {
+    width: 200px;
+    padding: 8px;
+    background-color: var(--cor-princ);
+    color: var(--cor-branco);
+    border: 1px solid var(--cor-princ);
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: red;
+    border: 1px solid red;
+}
+
+/* IDs--------------------------------------------------- */
+
+#top {
+    margin-top: 100px;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#res {
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    font-size: 40px;
+    font-family: 'Roboto', monospace;
+    font-weight: bold;
+}
+
+#top, #res {
+    background-color: var(--cor-branco);
+}

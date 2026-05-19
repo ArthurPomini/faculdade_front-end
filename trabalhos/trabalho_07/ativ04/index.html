@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Bank</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div id="top">
+        <h1>Taxas Infinity Bank</h1>
+        <div id="part0">
+            <div id="part1">
+                <p>Escolha a sua bandeira</p>
+                <select id="selectband" onchange="mostraBandeira()">
+                    <option value="" disabled selected hidden>Selecione a Bandeira</option>
+                    <option value="visa">Visa</option>
+                    <option value="master">Master</option>
+                    <option value="elo">Elo</option>
+                </select>
+                <div id="avisoSelect"></div>
+            
+                <p>Valor</p>
+                <input type="number" id="valor" min="1">
+                <div id="avisoValor"></div>
+                
+                <p>Número de Parcelas</p>
+                <input type="number" id="numparc" min="1">
+                <div id="avisoParcelas"></div>
+                
+                <button onclick="calculaTotal()">CALCULAR</button>
+            </div>
+            <div id="part2">
+                <img id="imgBandeira" src="" alt="" style="display: none;">
+            </div>
+        </div>
+        <div id="res"></div>
+    </div>
+
+</div>
+<script src="js.js"></script>
+</body>
+</html>

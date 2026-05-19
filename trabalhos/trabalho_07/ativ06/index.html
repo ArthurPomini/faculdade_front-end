@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div id="top">
+        <h1>Organização de Eventos</h1>
+        
+        <p>Escolha seu pacote</p>
+        <select id="plano">
+            <option value="op1">Standard - R$ 50,00 Por Pessoa</option>
+            <option value="op2">Premium - R$ 80,00 Por Pessoa</option>
+            <option value="op3">Infinity Deluxe - R$ 120,00 Por Pessoa</option>
+        </select>
+        
+        <p>Número de pessoas</p>
+        <input id="numconv" type="number" min="1">
+        <div id="aviso"></div>
+
+        <button onclick="calcValor()">Calcular Valor</button>
+        <div id="res"></div>
+    </div>
+</div>
+<script src="js.js "></script>
+</body>
+</html>

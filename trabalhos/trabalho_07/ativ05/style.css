@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-princ: pink;
+    --cor-preto: black;
+    --cor-branco: white;
+}
+
+.container {
+    margin: 0 25%;
+}
+
+.botao-excluir {
+    background-color: red;
+}
+
+.botao-editar {
+    background-color: orange;
+}
+
+.botao-concluir {
+    background-color: green;
+}
+
+.classe-riscado {
+    text-decoration: line-through;
+}
+
+body {
+    background-color: var(--cor-princ);
+    font-family: 'Roboto', monospace;
+}
+
+input {
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin: 30px 0;
+}
+
+h2 {
+    margin: 15px 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    margin: 0 100px;
+    border-bottom: 1px solid grey;
+}
+
+li button {
+    color: var(--cor-branco);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#botao-add {
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 8px;
+    color: var(--cor-branco);
+    border: none;
+    background-color: rgb(255, 53, 86);
+}
+
+#top {
+    color: var(--cor-branco);
+    font-weight: bold;
+    text-align: center;
+}
+
+#res {
+    background-color: var(--cor-branco);
+    border-radius: 10px;
+}

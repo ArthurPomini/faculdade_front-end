@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-princ: rgb(255, 136, 0);
+    --cor-preto: black;
+    --cor-branco: white;
+}
+
+/* CLASSES--------------------------------------------------- */
+
+.container {
+    margin: 0 25%;
+}
+
+/* ELEMENTOS--------------------------------------------------- */
+
+body {
+    background-color: var(--cor-princ);
+    text-align: center;
+    font-family: 'Roboto', monospace;
+}
+
+h1 {
+    font-size: 46px;
+    grid-column: span 3;
+    text-align: center;
+    margin: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+input {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    outline: none;
+}
+
+button {
+    grid-column: span 3;
+    margin: 0 auto;
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--cor-branco);
+    background-color: var(--cor-princ);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.37);
+}
+
+/* IDs--------------------------------------------------- */
+
+#top {
+    background-color: var(--cor-branco);
+    margin-top: 100px;
+    padding: 30px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; 
+}
+
+
+
+#nome {
+    grid-column: span 3;
+}
+
+#res {
+    margin-top: 100px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 30px;
+}
