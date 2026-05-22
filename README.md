@@ -21,8 +21,8 @@ Este repositório contém todos os trabalhos e atividades desenvolvidos durante 
 | **Trabalho 3** | HTML (entregue pelo professor) + CSS realizado pelo aluno. | Finalizado |
 | **Trabalho 4** | HTML (entregue pelo professor) + CSS feito com DaisyUI. | Finalizado |
 | **Trabalho 5** | HTML (entregue pelo professor) + CSS feito com BootStrap. | Finalizado |
-| **Trabalho 6** | Site com bichinho para alimentar com JavaScript | Em Andamento |
-| **Trabalho 7** | To-Do List | Em Andamento |
+| **Trabalho 6** | Site com bichinho para alimentar com JavaScript | Finalizado |
+| **Trabalho 7** | To-Do List | Finalizado |
 | **Trabalho 8** | Atividades com JavaScript | Finalizado |
 
 ---
