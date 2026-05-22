@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 2s ease;
+    font-family: sans-serif;
+}
+
+body.dia {
+    background-color: #87CEEB; 
+}
+
+body.noite {
+    background-color: #2c3e50; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#bichinho {
+    width: 400px;
+    height: 400px;
+    max-width: 800px;
+    max-height: 800px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+#biscoito {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+#biscoito:hover {
+    transform: scale(1.1);
+}
+#biscoito:active {
+    transform: scale(0.95);
+}
