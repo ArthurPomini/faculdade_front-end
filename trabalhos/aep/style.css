@@ -1,0 +1,204 @@
+/* ==========================================================================
+   1. RESET E CONFIGURAÇÕES GLOBAIS
+   ========================================================================== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #f8fafc;         /* Fundo do site (cinza azulado muito claro) */
+    --card-bg: #ffffff;          /* Fundo dos cartões (branco puro) */
+    --primary-color: #3b82f6;     /* Azul principal (Duolingo/Khan style) */
+    --primary-hover: #2563eb;    /* Azul mais escuro para o efeito hover */
+    --text-main: #1e293b;        /* Texto principal (quase preto, evita fadiga) */
+    --text-muted: #64748b;       /* Texto secundário/legendas (cinza) */
+    --border-color: #e2e8f0;     /* Cor das bordas finas */
+    --accent-color: #f59e0b;     /* Dourado para o destaque do Rank */
+    --success-color: #10b981;    /* Verde para matérias concluídas */
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ==========================================================================
+   2. ESTRUTURA E LAYOUT (CONTAINER)
+   ========================================================================== */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    flex: 1; /* Empurra o rodapé para o fundo se houver pouco conteúdo */
+}
+
+/* ==========================================================================
+   3. CABEÇALHO DO UTILIZADOR (#TOP)
+   ========================================================================== */
+#top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--card-bg);
+    padding: 24px 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+    margin-bottom: 40px;
+    border: 1px solid var(--border-color);
+}
+
+#top h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 4px;
+}
+
+.xp-text {
+    font-size: 16px;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.xp-text span {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* Medalha/Badge do Rank */
+.rank-badge {
+    text-decoration: none;
+    color: white;
+    background-color: var(--accent-color);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+.rank-badge:hover {
+    transform: translateY(-2px);
+    background-color: #d97706;
+}
+
+/* ==========================================================================
+   4. SECÇÃO DE MATÉRIAS (GRID & CARDS)
+   ========================================================================== */
+.section-title {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Grelha Inteligente Autoregulável */
+#mats {
+    display: grid;
+    /* Divide em colunas de no mínimo 240px. Se não couber na tela, quebra a linha sozinho */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+/* Blocos das Matérias */
+.card-mat {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 24px;
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empurra o título para o topo e o progresso para a base */
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+/* Efeito de Elevação ao Passar o Rato */
+.card-mat:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 12px 20px -3px rgba(59, 130, 246, 0.12);
+}
+
+/* Título interno do link */
+.mat-title {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    transition: color 0.2s ease;
+}
+
+.card-mat:hover .mat-title {
+    color: var(--primary-color);
+}
+
+/* ==========================================================================
+   5. BARRAS DE PROGRESSO INTERNAS DOS CARDS
+   ========================================================================== */
+.mat-progress-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Base/Trilho cinzento da barra de progresso */
+.mat-progress-wrapper::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 8px;
+    background-color: #e2e8f0;
+    border-radius: 4px;
+}
+
+/* O preenchimento azul que se ajusta via inline style (ex: width: 67%) */
+.mat-progress-bar {
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    margin-top: -16px; /* Sobe exatamente a altura do trilho para sobrepor o ::before */
+    transition: width 0.4s ease-in-out;
+}
+
+/* Texto da percentagem (ex: 45%) */
+.mat-progress-text {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+/* Modificadores para quando a matéria chega a 100% (Concluído) */
+.style-completed {
+    background-color: var(--success-color) !important;
+}
+
+.text-completed {
+    color: var(--success-color) !important;
+}
+
+/* ==========================================================================
+   6. RODAPÉ (FOOTER)
+   ========================================================================== */
+footer {
+    background-color: #0f172a; /* Azul escuro da paleta, muito mais moderno que preto puro */
+    padding: 24px;
+    color: #94a3b8;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}

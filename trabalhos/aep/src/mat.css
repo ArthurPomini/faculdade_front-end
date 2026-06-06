@@ -1,0 +1,383 @@
+/* --- Reset e Configurações Globais --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --primary-color: #3b82f6;
+    --primary-hover: #2563eb;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --success: #10b981;
+    --danger: #ef4444;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- Container Principal --- */
+.main-container {
+    width: 100%;
+    max-width: 900px; /* Reduzi um pouco para o conteúdo não ficar esticado */
+    margin: 0 auto;
+    padding: 40px 20px;
+    flex-grow: 1;
+}
+
+/* --- Cabeçalho --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.title-area {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.btn-home-back {
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.btn-home-back:hover {
+    color: var(--primary-color);
+}
+
+.subject-title {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.user-stats {
+    display: flex;
+    gap: 12px;
+}
+
+.badge-rank, .badge-xp {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+.badge-xp {
+    color: var(--primary-color);
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+/* --- Seção de Progresso --- */
+.progress-section {
+    width: 100%;
+    margin-bottom: 40px;
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+}
+
+.progress-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+.progress-container {
+    width: 100%;
+    height: 24px;
+    background-color: #f1f5f9;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    transition: width 0.5s ease-in-out;
+}
+
+.progress-text {
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+/* --- Grid de Botões (Cards de Atividades) --- */
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.content-button {
+    background-color: var(--card-bg);
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 40px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.content-button .icon {
+    font-size: 32px;
+}
+
+.content-button:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px -3px rgba(59, 130, 246, 0.15);
+}
+
+/* --- Modais Modernizados --- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 42, 0.6); /* Backdrop mais moderno e escuro */
+    backdrop-filter: blur(4px); /* Suaviza o fundo atrás do modal */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-content, .modal-content-exercicio {
+    background-color: var(--card-bg);
+    padding: 32px;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-button:hover {
+    color: var(--danger);
+}
+
+/* --- Área das Questões e Alternativas --- */
+.tag-topico {
+    background-color: #eff6ff;
+    color: var(--primary-color);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.question-box h2 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.enunciado {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #475569;
+    margin-bottom: 24px;
+}
+
+.img-wrapper {
+    background: #f8fafc;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px dashed var(--border-color);
+    margin-bottom: 24px;
+}
+
+.question-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Customização das Alternativas */
+.alternative {
+    display: flex;
+    align-items: center;
+    background-color: var(--card-bg);
+    padding: 16px;
+    margin-bottom: 12px;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+/* Pequeno box com a letra da alternativa */
+.alternative .letter {
+    background-color: #f1f5f9;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 14px;
+    font-size: 14px;
+    color: var(--text-muted);
+    transition: all 0.2s ease;
+}
+
+.alternative:hover {
+    border-color: var(--primary-color);
+    background-color: #f0f6ff;
+}
+
+.alternative input[type="radio"] {
+    display: none; /* Escondemos o rádio padrão feio */
+}
+
+/* Efeito quando a alternativa está selecionada (Funciona via CSS puro se o input estiver dentro da label) */
+.alternative:has(input[type="radio"]:checked) {
+    border-color: var(--primary-color);
+    background-color: #eff6ff;
+}
+.alternative:has(input[type="radio"]:checked) .letter {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Botão de Enviar */
+.submit-button {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background-color 0.2s;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.submit-button:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Caixa de Feedback Dinâmica */
+.feedback {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: 700;
+    text-align: center;
+    display: none;
+}
+
+.feedback.correct {
+    display: block;
+    background-color: #ecfdf5;
+    color: var(--success);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.feedback.wrong {
+    display: block;
+    background-color: #fef2f2;
+    color: var(--danger);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+/* --- Rodapé Moderno --- */
+.footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+/* Container do conteúdo do modal (Aumentado para o vídeo ficar maior) */
+.modal-content {
+    background-color: var(--card-bg, #ffffff);
+    padding: 40px; /* Um pouco mais de respiro nas bordas */
+    border-radius: 24px;
+    width: 95%; /* Ocupa quase toda a largura em telas pequenas */
+    max-width: 1000px; /* Alvo principal: Tela de cinema para o vídeo */
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    max-height: 90vh;
+    overflow: hidden; /* Evita barras de rolagem desnecessárias no vídeo */
+}
+
+/* Mantém a proporção perfeita de cinema (16:9) */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Truque matemático para manter a proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin-top: 25px;
+    border-radius: 12px; /* Cantos arredondados no próprio vídeo */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Força o iframe injetado pelo JS a ocupar 100% do container gigante */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}

@@ -1,0 +1,108 @@
+/* Reset e Variáveis de Cores (Alinhado com a Home) */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --primary-color: #3b82f6;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    min-height: 100vh;
+}
+
+/* Container Responsivo */
+.container {
+    width: 100%;
+    max-width: 700px; /* Um container mais estreito foca melhor a leitura do ranking */
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Cabeçalho do Ranking */
+.rank-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.btn-back {
+    align-self: flex-start;
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    transition: all 0.2s ease;
+    margin-bottom: 15px;
+}
+
+.btn-back:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateX(-2px);
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--text-main);
+    text-align: center;
+}
+
+/* Caixa do Ranking (Card Principal) */
+.rank-box {
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    overflow: hidden; /* Garante que os cantos dos itens internos não passem do arredondado */
+    border: 1px solid var(--border-color);
+}
+
+/* Itens da Lista (Injetados via JS) */
+li {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between; /* Alinha nome na esquerda, pontos/posição na direita */
+    align-items: center;
+    padding: 18px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.2s ease;
+}
+
+/* Remove a borda do último item para não sobrar espaço */
+li:last-child {
+    border-bottom: none;
+}
+
+/* Efeito ao passar o mouse na linha do usuário */
+li:hover {
+    background-color: #f1f5f9;
+}
+
+/* Dica de Ouro: Como seu JS provavelmente vai criar os elementos,
+   você pode estilizar posições específicas (ex: 1º, 2º e 3º lugar)
+   adicionando classes neles pelo JS, ou usando seletores CSS como abaixo: */
+
+/* Estilo para o 1º Lugar (Exemplo conceitual caso queira destacar) */
+li:first-child {
+    background-color: #fef3c7; /* Fundo levemente dourado */
+    color: #b45309;
+}
